@@ -8,7 +8,16 @@ body {
     font-family: 'Vazirmatn', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0a0a0a;
     color: #ffffff;
-    overflow-x: hidden;
+    overflow-x: hidden;  
+    max-width: 100vw;    
+    position: relative;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;     
 }
 
 html {
@@ -1994,16 +2003,12 @@ body.light-theme .form-title::after {
     background: #0099cc;
 }
 
-
-
 /* ==================== */
 /* RESPONSIVE - MOBILE  */
 /* ==================== */
 
-/* تبلت و پایین‌تر */
 @media (max-width: 992px) {
     
-    /* ========== NAVBAR ========== */
     .nav-menu {
         position: fixed;
         top: 0;
@@ -2050,7 +2055,6 @@ body.light-theme .form-title::after {
         font-size: 0.8rem;
     }
     
-    /* ========== HOME ========== */
     .home-container {
         flex-direction: column-reverse;
         text-align: center;
@@ -2100,7 +2104,6 @@ body.light-theme .form-title::after {
         font-size: 1.2rem;
     }
     
-    /* ========== ABOUT ========== */
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -2143,13 +2146,11 @@ body.light-theme .form-title::after {
         font-size: 1.2rem;
     }
     
-    /* ========== SKILLS ========== */
     .skills-container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
-    /* ========== TECH STACK ========== */
     .tech-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
@@ -2169,7 +2170,6 @@ body.light-theme .form-title::after {
         font-size: 0.85rem;
     }
     
-    /* ========== SERVICES ========== */
     .services-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -2179,7 +2179,6 @@ body.light-theme .form-title::after {
         padding: 2rem 1.5rem;
     }
     
-    /* ========== JOURNEY ========== */
     .timeline::before {
         left: 25px;
     }
@@ -2215,7 +2214,6 @@ body.light-theme .form-title::after {
         font-size: 0.8rem;
     }
     
-    /* ========== PORTFOLIO ========== */
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -2237,7 +2235,6 @@ body.light-theme .form-title::after {
         font-size: 0.8rem;
     }
     
-    /* ========== CONTACT ========== */
     .contact-container {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -2252,7 +2249,6 @@ body.light-theme .form-title::after {
         transform: translateX(-50%);
     }
     
-    /* ========== SECTION HEADER ========== */
     .section-title {
         font-size: 2rem;
     }
@@ -2261,7 +2257,6 @@ body.light-theme .form-title::after {
         font-size: 0.9rem;
     }
     
-    /* ========== FOOTER ========== */
     .footer-logo {
         font-size: 1.5rem;
     }
@@ -2273,10 +2268,8 @@ body.light-theme .form-title::after {
     }
 }
 
-/* موبایل کوچیک */
 @media (max-width: 576px) {
     
-    /* ========== HOME ========== */
     .name {
         font-size: 1.8rem;
     }
@@ -2308,7 +2301,6 @@ body.light-theme .form-title::after {
         font-size: 3rem;
     }
     
-    /* ========== TECH STACK ========== */
     .tech-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.8rem;
@@ -2324,17 +2316,14 @@ body.light-theme .form-title::after {
         font-size: 1.5rem;
     }
     
-    /* ========== SERVICES ========== */
     .services-container {
         grid-template-columns: 1fr;
     }
     
-    /* ========== PORTFOLIO ========== */
     .portfolio-container {
         grid-template-columns: 1fr;
     }
     
-    /* ========== SECTION PADDING ========== */
     .home-section,
     .about-section,
     .skills-section,
@@ -2350,7 +2339,6 @@ body.light-theme .form-title::after {
         padding: 3rem 1rem 1.5rem;
     }
     
-    /* ========== SCROLL TOP BTN ========== */
     .scroll-top-btn {
         width: 40px;
         height: 40px;
